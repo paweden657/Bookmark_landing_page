@@ -1,3 +1,22 @@
 :root {
-    
+    --clr-primary-soft-blue: hsl(229, 8%, 60%);
+    --clr-primary-soft-red: hsl(0, 94%, 66%);
+
+    --clr-neutral-grayish-blue: hsl(229, 8%, 60%);
+    --clr-neutral-very-dark-blue: hsl(229, 31%, 21%);
+
+    --ff: 'Rubik', sans-serif;
+
+    --fs: 18px;
+
+    --fw-400: 400;
+    --fw-500: 500;
+
+}
+body, html {
+    width: 100%;
+
+    min-width: 375px;
+
+    margin: 0;
 }
