@@ -241,6 +241,33 @@ h2 {
 }
 #main-extension-section {
     padding: 2.5% 10% 5% 10%;
+
+    text-align: center;
+}
+#extension-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 7%;
+    margin-top: 5%;
+}
+.extension {
+    
+}
+.extension::before {
+    background-image: url(images/bg-dots.svg);
+}
+.extension img {
+    width: 50%;
+}
+.add-extension-p {
+    color: var(--clr-neutral-very-dark-blue);
+
+    font-size: 1.3rem;
+}
+.minimum-version-p
+{
+    margin-bottom: 25%;
 }
 .hide {
     display: none;
