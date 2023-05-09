@@ -5,6 +5,7 @@
     --clr-neutral-grayish-blue: hsl(229, 8%, 60%);
     --clr-neutral-very-dark-blue: hsl(229, 31%, 21%);
 
+    --clr-primary-soft-blue-hsl: 231, 69%;
     --clr-neutral-grayish-blue-hsl: 229, 8%;
 
 
@@ -245,20 +246,42 @@ h2 {
     text-align: center;
 }
 #extension-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    gap: 7%;
+    position: relative;
+
+    gap: 5%;
     margin-top: 5%;
 }
 .extension {
-    
+    position: relative;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 10px hsl(var(--clr-primary-soft-blue-hsl), 90%);
+
+    width: 100%;
+    max-width: 346px;
+
+    margin: auto;
+
+    padding-bottom: 2.5%;
 }
 .extension::before {
+    content: "";
+    position: absolute;
+
+    top: 73%;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
     background-image: url(images/bg-dots.svg);
 }
 .extension img {
-    width: 50%;
+    margin-bottom: 10%;
 }
 .add-extension-p {
     color: var(--clr-neutral-very-dark-blue);
@@ -268,6 +291,23 @@ h2 {
 .minimum-version-p
 {
     margin-bottom: 25%;
+}
+.minimum-version-p {
+    font-size: 0.9rem;
+}
+.extension-btn {
+    width: 80%;
+
+    background-color: var(--clr-primary-soft-blue);
+}
+#chrome-extension {
+    margin-top: 0;
+}
+#firefox-extension {
+    margin-top: 10%;
+}
+#opera-extension {
+    margin-top: 20%;
 }
 .hide {
     display: none;
