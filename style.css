@@ -40,9 +40,6 @@ nav {
     max-width: 2016px;
     margin: auto;
 }
-.logo {
-    height: 30px;
-}
 #nav-links {
     display: flex;
     justify-content: end;
@@ -55,6 +52,9 @@ a {
     color: var(--clr-neutral-very-dark-blue);
 
     text-decoration: none;
+}
+a:hover {
+    color: var(--clr-primary-soft-red);
 }
 p {
     font-size: 1rem;
@@ -73,6 +73,15 @@ p {
     width: 120px;
 
     background-color: var(--clr-primary-soft-red);
+}
+#btn-login:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-red);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-red);
 }
 #main-section-bookmark {
     display: flex;
@@ -129,12 +138,28 @@ h1 {
 
     background-color: var(--clr-primary-soft-blue)
 }
+#btn-chrome:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-blue);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-blue);
+}
 #btn-firefox {
     width: 150px;
 
     color: var(--clr-neutral-very-dark-blue);
 
     background-color: hsl(var(--clr-neutral-grayish-blue-hsl), 95%);
+}
+#btn-firefox:hover {
+    cursor: pointer;
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-neutral-very-dark-blue);
 }
 #main-section-features {
     display: flex;
@@ -172,6 +197,10 @@ h2 {
 }
 .column p {
     color: var(--clr-neutral-very-dark-blue);
+}
+.column p:hover {
+    cursor: pointer;
+    color: var(--clr-primary-soft-red);
 }
 .horizontal-bar {
     width: 100%;
@@ -240,6 +269,15 @@ h2 {
 
     background-color: var(--clr-primary-soft-blue);
 }
+.more-info-btn:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-blue);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-blue);
+}
 #main-extension-section {
     padding: 2.5% 10% 5% 10%;
 
@@ -305,6 +343,15 @@ h2 {
     width: 80%;
 
     background-color: var(--clr-primary-soft-blue);
+}
+.extension-btn:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-blue);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-blue);
 }
 #chrome-extension {
     margin-top: 0;
@@ -400,8 +447,8 @@ input {
 
     transform: translate(-50%, -50%);
 
-    width: calc(100% + 5px) !important;
-    height: calc(100% + 5px);
+    width: calc(100% + 3px) !important;
+    height: calc(100% + 3px);
 
     z-index: -1;
 
@@ -416,6 +463,15 @@ input {
 
     background-color: var(--clr-primary-soft-red);
 }
+#conntact-btn:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-red);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-red);
+}
 #not-valid-mail {
     font-size: 0.5rem;
 
@@ -427,6 +483,38 @@ input {
 
     background-color: var(--clr-primary-soft-red);
 
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 10% 0 10%;
+
+    background-color: var(--clr-neutral-very-dark-blue);
+}
+footer svg path {
+    fill: white;
+}
+footer a {
+    color: white;
+}
+footer div {
+    display: flex;
+    align-items: center;
+}
+#footer-links {
+    width: 75%;
+    gap: 5%;
+}
+#social-media {
+    display: flex;
+    justify-content: end;
+
+    width: 10%;
+    gap: 15%;
+}
+#social-media svg:hover path {
+    fill: var(--clr-primary-soft-red);
 }
 .hide {
     display: none !important;
