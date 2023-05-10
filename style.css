@@ -252,6 +252,12 @@ h2 {
     position: relative;
 
     gap: 5%;
+
+    max-width: 1152px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
     margin-top: 5%;
 }
 .extension {
@@ -341,6 +347,87 @@ h2 {
 .open {
     transform: rotate(180deg);
 }
+#main-newsletter-section {
+    padding: 2.5% 10% 2.5% 10%;
+
+    text-align: center;
+
+    background-color: var(--clr-primary-soft-blue);
+}
+#main-newsletter-section p {
+    color: white;
+    padding: 0 40%;
+}
+#main-newsletter-section h2 {
+    color: white;
+    padding: 0 30%;
+}
+#main-newsletter-section div {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    margin: auto;
+
+    gap: 5%;
+}
+form {
+    position: relative;
+
+    z-index: 2;
+
+    width: 70%;
+
+    max-width: 404px;
+}
+input {
+    position: relative;
+
+    height: 50px;
+    width: 100%;
+
+    border-radius: 5px;
+
+    border-width: 0;
+
+    box-sizing: border-box;
+}
+#not-valid-bg {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: calc(100% + 5px) !important;
+    height: calc(100% + 5px);
+
+    z-index: -1;
+
+    background-color: var(--clr-primary-soft-red);
+
+    border-radius: 5px;
+
+    margin: 0;
+}
+#conntact-btn {
+    width: 120px;
+
+    background-color: var(--clr-primary-soft-red);
+}
+#not-valid-mail {
+    font-size: 0.5rem;
+
+    text-align: left;
+
+    padding: 2.5% 0 2.5% 2.5% !important;
+
+    margin: 0;
+
+    background-color: var(--clr-primary-soft-red);
+
+}
 .hide {
-    display: none;
+    display: none !important;
 }
