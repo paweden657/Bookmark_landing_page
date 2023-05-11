@@ -567,6 +567,20 @@ h2 {
 .close {
     stroke: var(--clr-primary-soft-blue);
 }
+@media only screen and (max-width: 768px) {
+    #main-faq-section {
+        padding-bottom: 25% !important;
+    }
+    #faq-main-p {
+        margin: 0;
+    }
+    #faq {
+        margin: 7.5% 0 7.5% 0;
+    }
+    .question-p {
+        font-size: 0.9rem;
+    }
+}
 #main-newsletter-section {
     padding: 2.5% 10% 2.5% 10%;
 
