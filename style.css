@@ -385,14 +385,14 @@ h2 {
     }
     .features-left-part {
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     .features-left-part img{
         width: 60%;
     }
     #bg-2 {
         top: 73%;
-        max-height: 140px;
+        max-height: 130px;
     }
     .features-right-part {
         width: 100%;
@@ -400,6 +400,9 @@ h2 {
         text-align: center;
 
         padding-left: 0;
+    }
+    .features-right-part p {
+        margin-bottom: 0 !important;
     }
     .features-right-part .more-info-btn {
         display: none;
@@ -488,6 +491,23 @@ h2 {
 }
 #opera-extension {
     margin-top: 30%;
+}
+@media only screen and (max-width: 768px) {
+    #extension-container {
+        display: block;
+    }
+    .extension {
+        width: 80%;
+    }
+    #chrome-extension {
+        margin: 0 auto 10% auto;
+    }
+    #firefox-extension {
+        margin: 10% auto 10% auto;
+    }
+    #opera-extension {
+        margin: 10% auto 0 auto ;
+    }
 }
 #main-faq-section {
     padding: 2.5% 10% 5% 10%;
