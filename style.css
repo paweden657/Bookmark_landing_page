@@ -613,6 +613,12 @@ form {
     width: 70%;
 
     max-width: 404px;
+
+}
+form ::placeholder {
+    padding-left: 5%;
+
+    color: var(--clr-neutral-grayish-blue);
 }
 input {
     position: relative;
@@ -734,6 +740,31 @@ footer div {
 }
 #social-media svg:hover path {
     fill: var(--clr-primary-soft-red);
+}
+@media only screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 7.5% 0 7.5% 0;
+    }
+    #footer-links {
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    #footer-links svg {
+        margin-bottom: 5%;
+    }
+    #footer-links p {
+        margin: 2.5% 0;
+    }
+    #social-media {
+        justify-content: center;
+
+        width: 20%;
+
+        gap: 20%;
+    }
 }
 .hide {
     display: none !important;
