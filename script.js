@@ -1,3 +1,5 @@
+let hamburgerBtn = document.getElementById("hamburger-icon");
+
 let simpleBookmarkingP = document.getElementById("simple-bookmarking");
 let speedySearchingP = document.getElementById("speedy-searching");
 let easySharingP = document.getElementById("easy-sharing");
@@ -14,6 +16,14 @@ let bg = document.getElementById("not-valid-bg");
 let notValidP = document.getElementById("not-valid-mail");
 
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+let showNavList = () => {
+    if(hamburgerBtn.src.endsWith("images/icon-hamburger.svg")) {
+        hamburgerBtn.src = "images/icon-close.svg";
+    } else {
+        hamburgerBtn.src = "images/icon-hamburger.svg";
+    }
+}
 
 let showPage = (pageNumber) => {
     if(window.innerWidth > 768) {
@@ -56,6 +66,9 @@ let checkEmail = () => {
         notValidP.classList.remove("hide")
     }
 }
+
+
+hamburgerBtn.addEventListener("click", () => {showNavList()});
 
 
 simpleBookmarkingP.addEventListener("click", () => {showPage(1)});
