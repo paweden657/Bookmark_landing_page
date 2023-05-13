@@ -50,6 +50,8 @@ nav {
     width: 100%;
 }
 #hamburger {
+    width: 30px;
+
     background-color: rgba(255, 255, 255, 0);
     border-width: 0;
 }
@@ -122,7 +124,7 @@ li a {
 
     background-color: var(--clr-neutral-very-dark-blue);
 
-    height: 100%;
+    height: calc(100% + 25px);
 
     opacity: 0.9;
 

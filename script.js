@@ -130,6 +130,11 @@ question3.addEventListener("click", () => {showAnswer(3)});
 
 question4.addEventListener("click", () => {showAnswer(4)});
 
+input.addEventListener("keydown", function(event) {
+    if(event.key === "Enter") {
+        event.preventDefault();
+    }
+});
 
 contactUsBtn.addEventListener("click", () => {checkEmail()});
 
