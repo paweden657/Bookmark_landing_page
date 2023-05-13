@@ -506,6 +506,14 @@ input {
 
     box-sizing: border-box;
 }
+#icon-error {
+    position: absolute;
+
+    top: 30%;
+    left: 90%;
+
+    transform: translate(0, -50%);
+}
 #not-valid-bg {
     position: absolute;
 
@@ -582,4 +590,7 @@ input {
 
         max-width: 338px;   
     }
+}
+.show-nav-main {
+    position: absolute;
 }

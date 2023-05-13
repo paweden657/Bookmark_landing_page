@@ -43,9 +43,11 @@ nav {
 
     height: 100%;
 }
-#nav-menu-mobile div {
+#nav-logo-container, #social-media-nav {
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
 }
 #hamburger {
     background-color: rgba(255, 255, 255, 0);
@@ -93,6 +95,13 @@ li a {
 
     outline: 2px solid white;
 }
+#btn-login-mobile:hover {
+    cursor: pointer;
+
+    color: var(--clr-neutral-very-dark-blue);
+
+    background-color: white;
+}
 #social-media-nav {
     justify-content: center !important;
 
@@ -103,6 +112,29 @@ li a {
         display: none;
     }
     #nav-menu-mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+}
+.show-nav-header {
+    position: relative;
+
+    background-color: var(--clr-neutral-very-dark-blue);
+
+    height: 100%;
+
+    opacity: 0.9;
+
+    z-index: 2;
+}
+.show-nav-nav {
+    height: 95%;
+    padding: 2.5% 10%;
+}
+.set-logo-color {
+    fill: white;
+}
+.set-circle-mark {
+    fill: var(--clr-neutral-very-dark-blue);
 }
