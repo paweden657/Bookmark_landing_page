@@ -454,6 +454,9 @@ h2 {
     .question-p {
         font-size: 0.9rem;
     }
+    .answer {
+        margin-top: 0;
+    }
 }
 #main-newsletter-section {
     padding: 2.5% 10% 2.5% 10%;
