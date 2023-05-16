@@ -1,0 +1,121 @@
+#main-section-bookmark {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    position: relative;
+
+    padding: 2.5% 2.5% 5% 10%;
+}
+#bookmark-right-part {
+    width: 50%;
+}
+#bookmark-right-part img {
+    width: 100%;
+}
+.background {
+    position: absolute;
+
+    z-index: -1;
+
+    width: 35%;
+    height: 70%;
+
+    max-height: 200px;
+
+    background-color: var(--clr-primary-soft-blue);
+}
+#bg-1 {
+    top: 80%;
+    left: 100%;
+
+    transform: translate(-100%, -100%);
+
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+#bookmark-left-part {
+    width: 50%;
+    padding-right: 5%;
+}
+h1 {
+    color: var(--clr-neutral-very-dark-blue);
+
+    font-size: 2.5rem;
+}
+#btns-container {
+    display: flex;
+    
+    gap: 5%;
+}
+#btn-chrome {
+    width: 150px;
+
+    background-color: var(--clr-primary-soft-blue)
+}
+#btn-chrome:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-blue);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-blue);
+}
+#btn-firefox {
+    width: 150px;
+
+    color: var(--clr-neutral-very-dark-blue);
+
+    background-color: hsl(var(--clr-neutral-grayish-blue-hsl), 95%);
+}
+#btn-firefox:hover {
+    cursor: pointer;
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-neutral-very-dark-blue);
+}
+@media only screen and (max-width: 768px) {
+    .main-section {
+        padding: 10% 5% 10% 5% !important;
+        text-align: center;
+    }
+    #main-section-bookmark {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2rem;
+
+        margin: 7.5% 0;
+    }
+    #bookmark-right-part, #bookmark-left-part {
+        width: 100%;
+    }
+    #bookmark-right-part {
+        position: relative;
+    }
+    #bookmark-right-part img {
+        width: 100%;
+    }
+    #bookmark-left-part {
+        padding: 0;
+    }
+    .background {
+        width: 60%;
+    }
+    #bg-1 {
+        top: 52%;
+    }
+    p {
+        font-size: 0.8rem;
+
+        margin: 7.5% 0;
+    }
+    #btns-container {
+        justify-content: center;
+    }
+}
+.show-nav-main {
+    position: absolute;
+}

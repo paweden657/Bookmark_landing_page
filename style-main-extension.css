@@ -1,0 +1,101 @@
+#main-extension-section {
+    padding: 2.5% 10% 5% 10%;
+
+    text-align: center;
+}
+#extension-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    position: relative;
+
+    gap: 5%;
+
+    max-width: 1152px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 5%;
+}
+.extension {
+    position: relative;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 10px hsl(var(--clr-primary-soft-blue-hsl), 90%);
+
+    width: 100%;
+    max-width: 346px;
+
+    margin: auto;
+
+    padding-bottom: 5%;
+}
+.extension::before {
+    content: "";
+    position: absolute;
+
+    top: 75%;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background-image: url(images/bg-dots.svg);
+}
+.extension img {
+    margin-bottom: 10%;
+}
+.add-extension-p {
+    color: var(--clr-neutral-very-dark-blue);
+
+    font-size: 1.3rem;
+}
+.minimum-version-p
+{
+    margin-bottom: 25%;
+}
+.minimum-version-p {
+    font-size: 0.9rem;
+}
+.extension-btn {
+    width: 80%;
+
+    background-color: var(--clr-primary-soft-blue);
+}
+.extension-btn:hover {
+    cursor: pointer;
+
+    color: var(--clr-primary-soft-blue);
+
+    background-color: white;
+
+    outline: 3px solid var(--clr-primary-soft-blue);
+}
+#chrome-extension {
+    margin-top: 0;
+}
+#firefox-extension {
+    margin-top: 15%;
+}
+#opera-extension {
+    margin-top: 30%;
+}
+@media only screen and (max-width: 768px) {
+    #extension-container {
+        display: block;
+    }
+    .extension {
+        width: 80%;
+    }
+    #chrome-extension {
+        margin: 0 auto 10% auto;
+    }
+    #firefox-extension {
+        margin: 10% auto 10% auto;
+    }
+    #opera-extension {
+        margin: 10% auto 0 auto ;
+    }
+}
